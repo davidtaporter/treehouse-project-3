@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: #2d3945;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2{
+    color: #2d3945;
+    margin: 2rem auto .75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container{
+    margin: 1.3rem;
+}
+
+.description{
+    text-align: center;
+    border-bottom: 3px solid #2d3945;
+}
+
+.description p{
+    color: #b7bcbf;
+    margin: .75rem auto 2rem;
+    font-size: 1.1rem;
+}
+
+form{
+    margin: 2px auto;
+    border-top: 2px solid #2d3945;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+    padding: 0;
+    margin: auto 0;
+}
+
+.basic-info{
+    border-bottom: 2px solid #2d3945;
+    padding-bottom: 1.5rem;
+}
+
+legend{
+    font-size: 1.5rem;
+    margin: 1.7rem 0;
+    font-weight: bold;
+}
+  
+label{
+    display: block;
+    color: #495d70;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #eff0f1;
+    padding: 1rem;
+    margin: .7rem 0;
+    border: none;
+    
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+    border: 2px solid #46698b;
+
+}
+
+::placeholder{
+    text-align: right;
+}
+
+select,
+select option{
+    color: black;
+}
+
+
+select:invalid,
+select option[value=""],
+::placeholder{
+    color: #888a8b;
+}
+
+#zip{
+    width: 50%;
+}
+
+.newsletter legend{
+    margin-bottom: 0;
+    padding-bottom: .5rem;
+}
+
+.newsletter p{
+    color: #495d70;
+    font-size: 1.1rem;
+}
+
+label.last-comment{
+    padding: 1rem 0;
+}
+
+label.option{
+    display: inline-flex;
+    padding: .4rem
+}
+
+.news-end{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    background-color: #4ebbb5;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: #b7bcbf;
+    margin: .75rem auto 2rem;
+    font-size: 1.1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px){
+    main{
+        min-width: 768px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .basic-info label{
+        width: 19%;
+        display: inline-flex;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    select{
+        display: inline-flex;
+        width: 80%;
+    }
+
+    #zip{
+        width: 25%;
+    }
+}
