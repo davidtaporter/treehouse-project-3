@@ -64,6 +64,7 @@ label{
 
 input[type="text"],
 input[type="tel"],
+input[type="email"],
 select,
 textarea{
     width: 100%;
@@ -77,6 +78,7 @@ textarea{
 
 input[type="text"]:focus,
 input[type="tel"]:focus,
+input[type="email"]:focus,
 select:focus,
 textarea:focus,
 button:focus{
@@ -167,6 +169,7 @@ footer{
 
     input[type="text"],
     input[type="tel"],
+    input[type="email"],
     select{
         display: inline-flex;
         width: 80%;
